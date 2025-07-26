@@ -16,15 +16,29 @@ ID_BUY = 22222
 # Количество подарков 
 GIFT_BUY = 1
 
+# Активные профили (в порядке приоритета)
+ACTIVE_PROFILES = ["default", "default1"]
 
-# Лимит по цене. Покупка будет совершена, если цена подарка в диапазоне FROM-TO
-PRICE_LIMIT = {
-    "FROM": 0,
-    "TO": 5000
+# Профили с индивидуальными лимитами
+PROFILES = {
+    "default": {
+        "MAX_TOTAL_SPEND": 100,
+        "PRICE_LIMIT": {"FROM": 0, "TO": 50},
+        "SUPPLY_LIMIT": {"FROM": 1, "TO": 10000}
+    },
+    "night_mode": {
+        "MAX_TOTAL_SPEND": 200,
+        "PRICE_LIMIT": {"FROM": 50, "TO": 100},
+        "SUPPLY_LIMIT": {"FROM": 10, "TO": 5000}
+    }
 }
 
-# Лимит по количеству. Покупка будет совершена, если количество подарка в диапазоне FROM-TO
-SUPPLY_LIMIT = {
-    "FROM": 1,
-    "TO": 50000
+# --- Прокси настройки ---
+USE_PROXY = True
+PROXY = {
+    "scheme": "socks5",
+    "hostname": "",
+    "port": 11111,
+    "username": "",
+    "password": ""
 }
