@@ -26,7 +26,7 @@ PROFILES = {
         "PRICE_LIMIT": {"FROM": 0, "TO": 50},
         "SUPPLY_LIMIT": {"FROM": 1, "TO": 10000}
     },
-    "night_mode": {
+    "default1": {
         "MAX_TOTAL_SPEND": 200,
         "PRICE_LIMIT": {"FROM": 50, "TO": 100},
         "SUPPLY_LIMIT": {"FROM": 10, "TO": 5000}
