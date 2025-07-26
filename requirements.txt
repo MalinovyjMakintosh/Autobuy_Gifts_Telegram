@@ -1,0 +1,4 @@
+loguru==0.7.3
+tgcrypto
+kurigram==2.2.4
+pyrogram==2.0.33
